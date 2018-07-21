@@ -1,0 +1,33 @@
+{
+  "name": "Kari2",
+  "version": "0.0.0",
+  "description": "1. Run bower install 2. run npm install 3. Run grunt runs 4. Run grunt build 5. Run python -m SimpleHTTPServer 8000 6. Open a browser on port 8000",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-concat": "~1.0.0",
+    "grunt-contrib-jshint": "~1.0.0",
+    "grunt-contrib-uglify": "~1.0.0",
+    "normalize.css": "^3.0.3"
+  },
+  "devDependencies": {
+    "grunt-contrib-uglify": "~1.0.0",
+    "grunt-contrib-jshint": "~1.0.0",
+    "grunt": "~0.4.5",
+    "grunt-contrib-concat": "~1.0.0",
+    "gulp": "~3.9.1",
+    "gulp-less": "^3.0.5",
+    "karma": "~0.13.22",
+    "karma-jasmine": "~0.3.7",
+    "karma-chrome-launcher": "~0.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:KariKlarikall/pawnstars.git"
+  },
+  "author": "",
+  "license": "BSD"
+}

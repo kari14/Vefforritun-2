@@ -1,0 +1,20 @@
+<div class="Container">
+    <h2>{{ message }}</h2>
+    <div class="Container__content">
+        <div class="thumbnail">
+            <!--<img ng-src="{{ product.cover }}">-->
+            <table class="Table">
+                <thead class="Table__header Table__row">
+                    <th class="Table__header__item Table__item"><button class="Button--filter" ng-click="sortData('name')" translate="NAME"></button></th>
+                    <th class="Table__header__item Table__item"><button class="Button--filter" ng-click="sortData('category')" translate="CATEGORY"></button></th>
+                </thead>
+                <tbody class="Table__body">
+                    <tr class="Table__row" ng-repeat="seller in sellers | orderBy:sortColum:revSort">
+                        <td class="Table__row__item Table__item"><a href ng-click="sellerDetail(seller)">{{ seller.name }}</a></td>
+                        <td class="Table__row__item Table__item">{{ seller.category }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

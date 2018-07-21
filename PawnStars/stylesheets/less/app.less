@@ -1,0 +1,148 @@
+.App {
+  position: relative;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  background: url("/assets/images/main.png") repeat-x 0 160px;
+  width: 100%;
+  background-size: 1919px 600px;
+  background-color: #cd7e02;
+
+}
+.App__wrapper {
+  width: 95%;
+  max-width: 1199px;
+  margin: 0 auto;
+}
+
+a {
+  color: #cd7e02;
+}
+
+.Container {
+  height: 532px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 10px;
+  border: 1px solid #cd7e02;
+  padding: 15px;
+  overflow: scroll;
+  margin: 20px 0;
+  &.Container--home {
+    background: transparent;
+    text-align: center;
+    border: none;
+  }
+}
+
+.Heading {
+  &.Heading--brand {
+    color: #fff;
+    border: solid 1px #fff;
+    border-radius: 5px;
+    display: inline-block;
+    padding:10px;
+    margin-top: 230px;
+  }
+}
+
+.Nav {
+  margin-left:135px;
+  top: 90px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  .Nav__item {
+    float: left;
+    list-style: none;
+    padding: 5px;
+    margin: 5px;
+    border: solid 1px #fff;
+    border-radius: 3px;
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+    &:hover {
+      transition: background 0.5s ease;
+      background: #fff;
+      a {
+        color: #cd7e02;
+      }
+    }
+  }
+}
+
+.Header {
+  height: 160px;
+  background: url("/assets/images/logo-brand.png") no-repeat;
+  position: relative;
+  background-position: 0 20px;
+}
+
+.Lang {
+  right: 0;
+  top: 0;
+  position: absolute;
+  .Button {
+    background: transparent;
+    border: none;
+    color: #000;
+    &:hover {
+      transition: color 0.5s ease;
+      color: #fff;
+    }
+  }
+}
+
+.Table {
+  width: 100%;
+}
+
+.Table__item {
+  text-align: left;
+  padding: 10px;
+}
+
+.Table__row {
+  &:not(.Table__header) {
+    &:nth-child(2n+1) {
+      background: #eee;
+    }
+  }
+}
+
+.Table__header {
+  border-bottom: solid 1px #bbb;
+}
+
+.Button {
+  color: #cd7e02;
+  border: solid 1px #cd7e02;
+  border-radius: 5px;
+  padding: 10px;
+  background: #fff;
+  &:hover {
+    transition: background 0.5s ease;
+    color: #fff;
+    background: #cd7e02;
+  }
+}
+
+.Button--filter {
+  background: transparent;
+  border: none;
+  &:after {
+    content: "\25BE";
+    display: inline-block;
+    width: 20px;
+    color: #cd7e02;
+  }
+}
+
+.Textbox {
+  border: solid 1px #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  &:focus, &:active {
+    border-color: #cd7e02;
+  }
+}
+@import 'responsive';

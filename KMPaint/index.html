@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KM Paint</title>
+        <link rel="stylesheet" type="text/css" href="style/style.css"> 
+    </head>
+    <body>
+        <div id="wrapper">
+            <section id="tools">
+                <div class="colors">
+                    <label>Colors:</label>
+                    <button class="button red" id="red" style="background: #FF0000" value="#FF0000" onclick="changeColor('#FF0000')"></button>
+                    <button class="button green" id="green" style="background: #00FF00" value="#00FF00" onclick="changeColor('#00FF00')"></button>
+                    <button class="button black" id="black" style="background: #000000" value="#000000" onclick="changeColor('#000000')"></button>
+                    <button class="button white" id="white" style="background: #FFFFFF" value="#FFFFFF" onclick="changeColor('#FFFFFF')"></button>
+                    <button class="button blue" id="blue" style="background: #0000FF" value="#0000FF" onclick="changeColor('#0000FF')" ></button>
+                    <button class="button yellow" id="yellow" style="background: #FFFF00" value="#FFFF00" onclick="changeColor('#FFFF00')"></button>
+                </div>
+                <div class="shapes">
+                    <label>Shapes:</label>
+                    <button class="button" id="circle" onclick="changeTool('circle')">Circle</button>
+                    <button class="button" id="rect" onclick="changeTool('rect')">Rect</button>
+                    <button class="button" id="line" onclick="changeTool('line')">Line</button>
+                    <button class="button" id="pen" onclick="changeTool('pen')">Pen</button>
+                </div>
+                <div class="fillForm">
+                    
+                    <button class="button" id="fill" onclick="setFill()">Fill</button>
+                    <button class="button" id="text" onclick="changeTool('text')">Text</button>
+                    <input id="inputText"></input>
+                </div>
+            </section>
+            
+            <section id="actions">
+                <div class="commands">
+                    <button class="button" id="clear" onclick="clearCanvas(true)">Clear</button> 
+                    <button class="button" id="undo" onclick="undo()">Undo</button>
+                    <button class="button" id="redo" onclick="redo()">Redo</button>
+                    <button class="button" id="save" onclick="save()">Save</button>
+                </div>
+            </section>
+            <section id="sizes">
+                <div class="strokeSize">
+                    <label>Stroke size:</label>
+                    <button class="button" id="small" onclick="changePenSize(5)">Small</button>
+                    <button class="button" id="medium" onclick="changePenSize(10)">Medium</button>
+                    <button class="button" id="Large" onclick="changePenSize(15)">Large</button>
+                </div>
+                <div class="fontSize">
+                    <label>Font size:</label>
+                    <button class="button" id="smallFont" onclick="changeFontSize(50)">Small</button>
+                    <button class="button" id="medFont" onclick="changeFontSize(100)">Medium</button>
+                    <button class="button" id="largeFont" onclick="changeFontSize(150)">Large</button>
+                </div>
+            </section>
+            <section class="canvas">
+                <canvas id="canvas" width="900" height="400" >Update browser</canvas>
+            </section>
+            <script type="text/javascript" src="script/class.js"></script>
+            <script type="text/javascript" src="script/paint.js"></script>
+        </div>
+    </body>
+</html>

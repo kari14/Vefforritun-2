@@ -1,0 +1,22 @@
+{
+  "name": "Kari2",
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "^1.5.0",
+    "angular-route": "^1.5.0",
+    "angular-toastr": "^1.7.0",
+    "angular-translate": "^2.10.0",
+    "angular-mocks": "^1.5.0"
+  }
+}

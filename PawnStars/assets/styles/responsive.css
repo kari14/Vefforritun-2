@@ -1,0 +1,12 @@
+@media screen and (max-width: 767px) {
+  .Nav {
+    float: right;
+    margin-left: 150px;
+    top: 50px;
+  }
+}
+@media screen and (max-width: 533px) {
+  .Nav {
+    top: 20px;
+  }
+}

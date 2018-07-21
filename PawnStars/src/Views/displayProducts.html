@@ -1,0 +1,32 @@
+<div class="Container">
+<h2>{{ message }}</h2>
+<div>
+    <div class="thumbnail">
+        <!--<img ng-src="{{ product.cover }}">-->
+            <table class="Table">
+                <thead class="Table__header Table__row">
+                    <th class="Table__header__item Table__item"><button class="Button--filter" ng-click="sortData('item')" translate="ITEM">Item</button></th>
+                    <th class="Table__header__item Table__item"><button class="Button--filter" ng-click="sortData('category')" translate="CATEGORY">Category</button></th>
+                    <th class="Table__header__item Table__item"><button class="Button--filter" ng-click="sortData('price')" translate="PRICE">Price</button></th>
+                    <th class="Table__header__item Table__item"></th>
+            </thead>
+                <tbody class="Table__body">
+                    <tr class="Table__row" ng-repeat="product in products | orderBy:sortCol:revSort">
+                        <td class="Table__row__item Table__item">
+                        {{ product.item }}
+                        </td>
+                        <td class="Table__row__item Table__item">
+                        {{ product.category }}
+                        </td>
+                        <td class="Table__row__item Table__item">
+                        {{ product.price | currency:"$" }}
+                        </td>
+                        <td class="Table__row__item Table__item">
+                            <button class="Button" ng-click="editProduct(product)" translate="EDIT"></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>    
+    </div>
+</div>
+</div>
